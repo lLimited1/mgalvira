@@ -1,8 +1,7 @@
-<!DOCTYPE html><html lang="es"><head></head><body class="font-sans text-gray-900 bg-white">
-
-  <meta charset="utf-8">
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Reto 90 Días - Mamá Fit</title>
+<title>Mamá Fit - Flujo de Decoración Lila V3</title>
 <!-- Tailwind CSS v3 CDN -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <!-- Font Awesome for Icons -->
@@ -12,116 +11,106 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&amp;family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
 <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              primary: '#6d28d9', // Deep Purple
-              secondary: '#9333ea', // Vibrant Purple
-              accent: '#049d1b', // Green from original CTA
-              light: '#f3e8ff',
-              dark: '#1e1b4b'
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                brand: {
+                  primary: '#a855f7', // Bright Lilac/Purple
+                  secondary: '#c084fc', // Soft Lavender
+                  accent: '#049d1b', // Green from original CTA
+                  light: '#f5f3ff', // Very light lilac
+                  dark: '#581c87' // Muted deep lilac
+                }
+              },
+              fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+                heading: ['Montserrat', 'sans-serif'],
+              }
             }
-          },
-          fontFamily: {
-            sans: ['Poppins', 'sans-serif'],
-            heading: ['Montserrat', 'sans-serif'],
           }
         }
-      }
-    }
-  </script>
+    </script>
 <style data-purpose="custom-animations">
-    @keyframes pulse-green {
-      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(4, 157, 27, 0.7); }
-      50% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(4, 157, 27, 0); }
-    }
-    .animate-pulse-green {
-      animation: pulse-green 2s infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    .animate-float {
-      animation: float 4s ease-in-out infinite;
-    }
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-out;
-    }
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .hero-gradient {
-      background: radial-gradient(circle at top right, #f3e8ff 0%, #ffffff 70%);
-    }
-    /* Masking/Fade effect for the expert image bottom */
-    .expert-mask {
-      mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    }
-  
-    @keyframes shimmer-glow {
-      0%, 100% { box-shadow: 0 25px 50px -12px rgba(109, 40, 217, 0.5); border-color: #6d28d9; }
-      50% { box-shadow: 0 0 30px 5px rgba(4, 157, 27, 0.6); border-color: #049d1b; }
-    }
-    .animate-shimmer-glow {
-      animation: shimmer-glow 3s infinite ease-in-out;
-    }
-  </style>
+        @keyframes pulse-green {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(4, 157, 27, 0.7);
+            } 50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(4, 157, 27, 0);
+            }
+        }
+        .animate-pulse-green {
+            animation: pulse-green 2s infinite
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            } 50% {
+                transform: translateY(-15px);
+            }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite
+        }
+        .reveal {
+            opacity: 0;
+            transform: translatey(30px);
+            transition: all 0.8s ease-out
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translatey(0)
+        }
+        @keyframes shimmer-glow {
+            0%, 100% {
+                box-shadow: 0 25px 50px -12px rgba(168, 85, 247, 0.4);
+                border-color: #a855f7;
+            } 50% {
+                box-shadow: 0 0 30px 5px rgba(4, 157, 27, 0.5);
+                border-color: #049d1b;
+            }
+        }
+        .animate-shimmer-glow {
+            animation: shimmer-glow 3s infinite ease-in-out
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white overflow-x-hidden">
 <!-- BEGIN: Navigation -->
-<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-100 py-4" data-purpose="main-nav">
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 py-4" data-purpose="main-nav">
 <div class="container mx-auto px-6 flex justify-between items-center">
 <div class="flex items-center space-x-2">
-<div class="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold italic" style=""><br></div>
+<div class="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold italic">
+<i class="fas fa-venus text-sm"></i>
+</div>
 <span class="font-heading font-extrabold text-xl tracking-tight text-brand-dark uppercase" style="">Mamá Fit</span>
 </div>
-<a class="bg-brand-primary text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-brand-secondary transition-all" href="#pricing" style="">UNIRME AHORA</a>
+<a class="bg-brand-primary text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-brand-secondary transition-all shadow-sm" href="#pricing" style="">UNIRME AHORA</a>
 </div>
 </nav>
 <!-- END: Navigation -->
 <!-- BEGIN: Hero Section -->
-<section class="hero-gradient py-12 lg:pt-24 lg:pb-0 overflow-hidden" data-purpose="hero">
-<div class="container mx-auto px-6">
-<div class="flex flex-col lg:flex-row items-end gap-12">
-<!-- Left Column: Content -->
-<div class="lg:w-1/2 text-center lg:text-left pb-12 lg:pb-24">
+<section class="min-h-[600px] lg:min-h-[700px] flex items-center relative overflow-hidden" data-purpose="hero" style="background-image: url(&quot;https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/Fondo%20hero/Generated%20Image%20March%2012,%202026%20-%2011_11AM.png&quot;); background-size: cover; background-position: center center;">
+<div class="container mx-auto px-6 relative z-10 py-20 lg:py-32">
+<div class="max-w-3xl">
 <span class="inline-block bg-brand-primary text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6" style="">MÉTODO INOVFIT</span>
-<h1 class="font-heading font-extrabold text-4xl lg:text-6xl text-brand-dark leading-tight mb-6" style="">
-          RETO 90 DÍAS <br>
-<span class="text-brand-primary italic underline" style="">PARA BAJAR 10 KILOS</span>
+<h1 class="font-heading font-extrabold text-4xl lg:text-7xl text-white leading-tight mb-6 drop-shadow-lg" style="">
+                RETO 90 DÍAS <br>
+<span class="text-brand-secondary italic underline underline-offset-8 decoration-white/30" style="">PARA BAJAR 10 KILOS</span>
 </h1>
-<p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0" style="">
-          Descubre cómo alcanzar tu mejor forma física a través de un método eficiente diseñado especialmente para mujeres que buscan resultados reales.
-        </p>
-<div class="space-y-4">
+<p class="text-xl lg:text-2xl text-white/90 mb-8 max-w-xl font-medium drop-shadow-lg" style="">
+                Descubre cómo alcanzar tu mejor forma física a través de un método eficiente diseñado especialmente para mujeres que buscan resultados reales.
+            </p>
+<div class="flex flex-col sm:flex-row items-center gap-6">
 <a class="animate-pulse-green inline-block w-full sm:w-auto bg-brand-accent text-white px-10 py-5 rounded-xl font-heading font-bold text-xl shadow-lg hover:bg-green-700 transition-all text-center" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10&amp;bid=1768423174761" style="">
-            QUIERO PARTICIPAR DEL RETO
-          </a>
-<p class="text-sm font-medium text-brand-primary" style="">
-<i class="far fa-calendar-alt mr-2"></i> INICIO LUNES 19 DE ENERO
-          </p>
-</div>
-</div>
-<!-- Right Column: Expert Visual -->
-<div class="lg:w-1/2 relative flex justify-center lg:justify-end">
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-3xl -z-10"></div>
-<div class="relative w-full max-w-lg">
-<img alt="Experto Mamá Fit" class="w-full h-auto expert-mask" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/sin%20fondo.png" style="">
-<!-- Floating Social Proof Badge -->
-<div class="absolute bottom-1/4 -left-10 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl flex items-center space-x-3 border border-purple-100 hidden md:flex">
-<div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center text-brand-primary">
-<i class="fas fa-users text-xl"></i>
-</div>
-<div>
-<p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider" style="">Impacto Real</p>
-<p class="text-lg font-extrabold text-brand-dark" style="">+10,000 Alumnas</p>
-</div>
-</div>
+                    QUIERO PARTICIPAR DEL RETO
+                </a>
+<div class="text-white bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20">
+<p class="text-sm font-semibold drop-shadow-lg" style="">
+<i class="far fa-calendar-alt mr-2 text-brand-secondary"></i> INICIO LUNES 19 DE ENERO
+                    </p>
 </div>
 </div>
 </div>
@@ -129,163 +118,175 @@
 </section>
 <!-- END: Hero Section -->
 <!-- BEGIN: Benefits Section -->
-<section class="py-20 bg-white" data-purpose="benefits-list">
-<div class="container mx-auto px-6">
+<section class="py-24 bg-white relative overflow-hidden" data-purpose="benefits-list">
+<div class="container mx-auto px-6 relative z-10">
 <div class="text-center mb-16">
 <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-dark mb-4 uppercase tracking-tight" style="">¿Por qué hacer este reto?</h2>
-<div class="w-24 h-1 bg-brand-primary mx-auto"></div>
+<div class="w-24 h-1 bg-brand-secondary/40 mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="reveal p-6 rounded-2xl bg-brand-light/30 border border-purple-100 hover:shadow-lg transition-all group active">
-<div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 text-brand-primary group-hover:scale-110 transition-transform">
+<div class="reveal p-8 rounded-2xl bg-brand-light/40 border border-purple-50 hover:bg-white hover:shadow-xl hover:shadow-purple-100 transition-all group active">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
 <i class="fas fa-bolt text-2xl"></i>
 </div>
-<h3 class="font-bold text-lg mb-2" style="">Aceleración Metabólica</h3>
-<p class="text-gray-600" style="">Vas a acelerar tu metabolismo para adelgazar de forma natural.</p>
+<h3 class="font-bold text-lg text-brand-dark mb-2" style="">Aceleración Metabólica</h3>
+<p class="text-gray-500 text-sm leading-relaxed" style="">Vas a acelerar tu metabolismo para adelgazar de forma natural.</p>
 </div>
-<div class="reveal p-6 rounded-2xl bg-brand-light/30 border border-purple-100 hover:shadow-lg transition-all group active">
-<div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 text-brand-primary group-hover:scale-110 transition-transform">
+<div class="reveal p-8 rounded-2xl bg-brand-light/40 border border-purple-50 hover:bg-white hover:shadow-xl hover:shadow-purple-100 transition-all group active">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
 <i class="fas fa-dumbbell text-2xl"></i>
 </div>
-<h3 class="font-bold text-lg mb-2" style="">Cuerpo Tonificado</h3>
-<p class="text-gray-600" style="">Vas a lograr un cuerpo más firme y definido en menos tiempo.</p>
+<h3 class="font-bold text-lg text-brand-dark mb-2" style="">Cuerpo Tonificado</h3>
+<p class="text-gray-500 text-sm leading-relaxed" style="">Vas a lograr un cuerpo más firme y definido en menos tiempo.</p>
 </div>
-<div class="reveal p-6 rounded-2xl bg-brand-light/30 border border-purple-100 hover:shadow-lg transition-all group active">
-<div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 text-brand-primary group-hover:scale-110 transition-transform">
+<div class="reveal p-8 rounded-2xl bg-brand-light/40 border border-purple-50 hover:bg-white hover:shadow-xl hover:shadow-purple-100 transition-all group active">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
 <i class="fas fa-heart text-2xl"></i>
 </div>
-<h3 class="font-bold text-lg mb-2" style="">Adiós a Dolores</h3>
-<p class="text-gray-600" style="">Vas a vivir sin dolores crónicos, especialmente en rodillas y espalda.</p>
+<h3 class="font-bold text-lg text-brand-dark mb-2" style="">Adiós a Dolores</h3>
+<p class="text-gray-500 text-sm leading-relaxed" style="">Vas a vivir sin dolores crónicos, especialmente en rodillas y espalda.</p>
 </div>
-<div class="reveal p-6 rounded-2xl bg-brand-light/30 border border-purple-100 hover:shadow-lg transition-all group active">
-<div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 text-brand-primary group-hover:scale-110 transition-transform">
+<div class="reveal p-8 rounded-2xl bg-brand-light/40 border border-purple-50 hover:bg-white hover:shadow-xl hover:shadow-purple-100 transition-all group active">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
 <i class="fas fa-magic text-2xl"></i>
 </div>
-<h3 class="font-bold text-lg mb-2" style="">Más Juventud</h3>
-<p class="text-gray-600" style="">Te sentirás y te verás mucho más joven y vital.</p>
+<h3 class="font-bold text-lg text-brand-dark mb-2" style="">Más Juventud</h3>
+<p class="text-gray-500 text-sm leading-relaxed" style="">Te sentirás y te verás mucho más joven y vital.</p>
 </div>
-<div class="reveal p-6 rounded-2xl bg-brand-light/30 border border-purple-100 hover:shadow-lg transition-all group active">
-<div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 text-brand-primary group-hover:scale-110 transition-transform">
+<div class="reveal p-8 rounded-2xl bg-brand-light/40 border border-purple-50 hover:bg-white hover:shadow-xl hover:shadow-purple-100 transition-all group active">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
 <i class="fas fa-smile text-2xl"></i>
 </div>
-<h3 class="font-bold text-lg mb-2" style="">Autoestima Elevada</h3>
-<p class="text-gray-600" style="">Vas a tener más deseo de arreglarte y sentirte atractiva.</p>
+<h3 class="font-bold text-lg text-brand-dark mb-2" style="">Autoestima Elevada</h3>
+<p class="text-gray-500 text-sm leading-relaxed" style="">Vas a tener más deseo de arreglarte y sentirte atractiva.</p>
 </div>
-<div class="reveal p-6 rounded-2xl bg-brand-light/30 border border-purple-100 hover:shadow-lg transition-all group active">
-<div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center mb-4 text-brand-primary group-hover:scale-110 transition-transform">
+<div class="reveal p-8 rounded-2xl bg-brand-light/40 border border-purple-50 hover:bg-white hover:shadow-xl hover:shadow-purple-100 transition-all group active">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
 <i class="fas fa-star text-2xl"></i>
 </div>
-<h3 class="font-bold text-lg mb-2" style="">Orgullo Propio</h3>
-<p class="text-gray-600" style="">Podrás mirarte al espejo y sentirte orgullosa de tu proceso.</p>
+<h3 class="font-bold text-lg text-brand-dark mb-2" style="">Orgullo Propio</h3>
+<p class="text-gray-500 text-sm leading-relaxed" style="">Podrás mirarte al espejo y sentirte orgullosa de tu proceso.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- END: Benefits Section -->
 <!-- BEGIN: Deliverables Section -->
-<section class="py-20 bg-brand-dark text-white" data-purpose="what-you-get">
-<div class="container mx-auto px-6">
-<div class="max-w-4xl mx-auto text-center mb-16">
+<section class="py-24 relative overflow-hidden" data-purpose="what-you-get" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);">
+<!-- Cascading transition shape -->
+<div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+<svg class="relative block w-[calc(100%+1.3px)] h-[80px]" data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#FFFFFF"></path>
+</svg>
+</div>
+<div class="container mx-auto px-6 text-white relative z-10">
+<div class="max-w-4xl mx-auto text-center mb-16 pt-12">
 <h2 class="font-heading font-extrabold text-3xl lg:text-5xl mb-6 uppercase tracking-tight" style="">¿QUÉ VAS A RECIBIR EN EL RETO?</h2>
-<p class="text-purple-300 text-lg italic" style="">"El programa más completo para tu transformación total"</p>
+<p class="text-lg italic font-medium" style="">"El programa más completo para tu transformación total"</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl mx-auto">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">60 clases de rutinas en vivo</h4>
-<p class="text-purple-200 font-light" style="">Para quemar grasa del abdomen y tonificar.</p>
+<p class="font-light" style="">Para quemar grasa del abdomen y tonificar.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">40 clases por zoom</h4>
-<p class="text-purple-200 font-light" style="">Revisión técnica personalizada de tus ejercicios.</p>
+<p class="font-light" style="">Revisión técnica personalizada de tus ejercicios.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">12 planes de alimentación</h4>
-<p class="text-purple-200 font-light" style="">Diseñados para perder de 2 a 3 kilos por semana.</p>
+<p class="font-light" style="">Diseñados para perder de 2 a 3 kilos por semana.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">Corrección de comidas</h4>
-<p class="text-purple-200 font-light" style="">Seguimiento por el WhatsApp personal del Profe Miguel.</p>
+<p class="font-light" style="">Seguimiento por el WhatsApp personal del Profe Miguel.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">12 tutoriales de recetas saludables</h4>
-<p class="text-purple-200 font-light" style="">Aprende a comer rico sin engordar.</p>
+<p class="font-light" style="">Aprende a comer rico sin engordar.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">Comunidad VIP WhatsApp</h4>
-<p class="text-purple-200 font-light" style="">Apoyo mutuo y consejos constantes del Profe Miguel.</p>
+<p class="font-light" style="">Apoyo mutuo y consejos constantes del Profe Miguel.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center mt-1">
-<i class="fas fa-check text-xs"></i>
+<div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-1 bg-white">
+<i class="fas fa-check text-xs text-brand-primary"></i>
 </div>
 <div>
 <h4 class="font-bold text-xl uppercase" style="">Guía de ayuno intermitente</h4>
-<p class="text-purple-200 font-light" style="">Pierde grasa más rápido con protocolos seguros.</p>
+<p class="font-light" style="">Pierde grasa más rápido con protocolos seguros.</p>
 </div>
 </div>
 </div>
+</div>
+<!-- Bottom transition shape -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden rotate-180 leading-[0]">
+<svg class="relative block w-[calc(100%+1.3px)] h-[80px]" data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#FFFFFF"></path>
+</svg>
 </div>
 </section>
 <!-- END: Deliverables Section -->
 <!-- BEGIN: Bonuses Section -->
-<section class="py-20 bg-purple-50" data-purpose="exclusive-bonuses">
-<div class="container mx-auto px-6">
-<div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border-2 border-brand-primary relative overflow-hidden">
+<section class="py-24 bg-white relative overflow-hidden" data-purpose="exclusive-bonuses">
+<div class="container mx-auto px-6 relative z-10">
+<div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-sm border border-brand-secondary/20 relative overflow-hidden">
 <div class="absolute top-0 right-0 bg-brand-primary text-white px-8 py-2 rounded-bl-3xl font-bold uppercase tracking-widest text-xs" style="">
-        SOLO 24 HORAS
-      </div>
+                SOLO 24 HORAS
+            </div>
 <h2 class="font-heading font-extrabold text-2xl lg:text-4xl text-brand-dark mb-10 text-center uppercase" style="">
-        🎁 REGALOS EXCLUSIVOS <br> PRIMERAS 24 HORAS
-      </h2>
+                🎁 REGALOS EXCLUSIVOS <br> PRIMERAS 24 HORAS
+            </h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Bonus 1 -->
 <div class="flex flex-col text-center group h-full">
-<a class="relative mb-6 mx-auto w-full overflow-hidden rounded-2xl shadow-lg flex-grow block" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
-<img alt="Bono 1" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/bonos/sin%20fondo%20bono%201.png" style="">
+<a class="relative mb-6 mx-auto w-full overflow-hidden rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 flex-grow block bg-white" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
+<img alt="Bono 1" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500 p-2" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/bonos/sin%20fondo%20bono%201.png" style="">
 </a>
 <h3 class="font-bold text-xl text-brand-dark" style="">Bono Especial 1</h3>
 </div>
 <!-- Bonus 2 -->
 <div class="flex flex-col text-center group h-full">
-<a class="relative mb-6 mx-auto w-full overflow-hidden rounded-2xl shadow-lg flex-grow block" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
-<img alt="Bono 2" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/bonos/sin%20fondo%20bono%202.png" style="">
+<a class="relative mb-6 mx-auto w-full overflow-hidden rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 flex-grow block bg-white" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
+<img alt="Bono 2" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500 p-2" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/bonos/sin%20fondo%20bono%202.png" style="">
 </a>
 <h3 class="font-bold text-xl text-brand-dark" style="">Bono Especial 2</h3>
 </div>
 <!-- Bonus 3 -->
 <div class="flex flex-col text-center group h-full">
-<a class="relative mb-6 mx-auto w-full overflow-hidden rounded-2xl shadow-lg flex-grow block" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
-<img alt="Bono 3" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/bonos/sin%20fondo%20bono%203.png" style="">
+<a class="relative mb-6 mx-auto w-full overflow-hidden rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 flex-grow block bg-white" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
+<img alt="Bono 3" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500 p-2" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/bonos/sin%20fondo%20bono%203.png" style="">
 </a>
 <h3 class="font-bold text-xl text-brand-dark" style="">Bono Especial 3</h3>
 </div>
@@ -295,79 +296,79 @@
 </section>
 <!-- END: Bonuses Section -->
 <!-- BEGIN: Plan Cards Section -->
-<section class="py-20 bg-white" data-purpose="pricing-plans">
-<div class="container mx-auto px-6">
+<section class="py-24 bg-brand-light/30 relative overflow-hidden" data-purpose="pricing-plans">
+<div class="container mx-auto px-6 relative z-10">
 <div class="max-w-5xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 <!-- Card: Pago en 3 cuotas -->
-<div class="flex flex-col rounded-[40px] overflow-hidden shadow-xl border border-purple-100 transition-transform hover:scale-[1.02] duration-300 h-full bg-gradient-to-br from-white to-purple-50">
-<div class="bg-brand-dark/5 py-6 text-brand-dark font-heading font-bold text-lg uppercase tracking-widest text-center border-b border-purple-100" style="">Plan Mensual</div>
+<div class="flex flex-col rounded-[40px] overflow-hidden shadow-xl border border-purple-100 transition-transform hover:scale-[1.02] duration-300 h-full bg-white">
+<div class="bg-brand-light py-6 text-brand-dark font-heading font-bold text-lg uppercase tracking-widest text-center border-b border-purple-100" style="">Plan Mensual</div>
 <div class="p-8 flex flex-col items-center flex-grow">
-<div class="mb-2 text-gray-500 font-medium" style="">Empieza hoy por solo</div>
+<div class="mb-2 text-gray-400 font-medium" style="">Empieza hoy por solo</div>
 <div class="mb-6 flex flex-col items-center">
 <div class="flex items-start">
 <span class="text-brand-primary text-2xl font-bold mt-2" style="">$</span>
 <span class="text-brand-primary text-7xl font-extrabold tracking-tighter" style="">47</span>
 </div>
-<span class="text-brand-primary/80 text-xl font-bold uppercase tracking-widest mt-1" style="">/ UN MES</span>
+<span class="text-brand-primary/60 text-xl font-bold uppercase tracking-widest mt-1" style="">/ UN MES</span>
 </div>
-<div class="mb-8 p-4 bg-white/60 rounded-2xl border border-purple-100 text-center w-full">
-<p class="text-gray-600 text-sm font-medium leading-relaxed italic" style="">Ideal para empezar tu transformación sin un compromiso total inmediato.</p>
+<div class="mb-8 p-4 bg-brand-light/30 rounded-2xl border border-purple-50 text-center w-full">
+<p class="text-gray-500 text-sm font-medium leading-relaxed italic" style="">Ideal para empezar tu transformación sin un compromiso total inmediato.</p>
 </div>
 <ul class="w-full space-y-4 mb-10 text-left px-4">
-<li class="flex items-center text-gray-700" style="">
-<i class="fas fa-check-circle text-brand-primary mr-3 text-lg"></i>
+<li class="flex items-center text-gray-600" style="">
+<i class="fas fa-check-circle text-brand-secondary mr-3 text-lg"></i>
 <span class="text-sm font-medium" style="">Acceso total por 30 días</span>
 </li>
-<li class="flex items-center text-gray-700" style="">
-<i class="fas fa-check-circle text-brand-primary mr-3 text-lg"></i>
+<li class="flex items-center text-gray-600" style="">
+<i class="fas fa-check-circle text-brand-secondary mr-3 text-lg"></i>
 <span class="text-sm font-medium" style="">Seguimiento personalizado</span>
 </li>
 </ul>
-<a class="bg-white border-2 border-brand-primary text-brand-primary px-10 py-5 rounded-2xl font-heading font-extrabold text-xl hover:bg-brand-primary hover:text-white transition-all w-full text-center shadow-lg uppercase tracking-tight" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">
-              EMPEZAR AHORA
-            </a>
-<div class="mt-6 text-gray-400 text-[10px] font-bold uppercase tracking-widest" style="">TE QUEDAS CON LOS VIDEOS POR UN MES</div>
+<a class="bg-white border-2 border-brand-primary text-brand-primary px-10 py-5 rounded-2xl font-heading font-extrabold text-xl hover:bg-brand-primary hover:text-white transition-all w-full text-center shadow-md uppercase tracking-tight" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">
+                            EMPEZAR AHORA
+                        </a>
+<div class="mt-6 text-gray-300 text-[10px] font-bold uppercase tracking-widest" style="">TE QUEDAS CON LOS VIDEOS POR UN MES</div>
 </div>
 </div>
 <!-- Card: Pago Único (Recommended) -->
-<div class="flex flex-col rounded-[40px] overflow-hidden shadow-2xl border-4 border-brand-primary transition-transform hover:scale-[1.03] duration-300 h-full relative bg-gradient-to-br from-brand-dark to-brand-primary animate-shimmer-glow">
+<div class="flex flex-col rounded-[40px] overflow-hidden shadow-2xl border-4 border-brand-primary transition-transform hover:scale-[1.03] duration-300 h-full relative bg-gradient-to-br from-brand-primary to-brand-secondary animate-shimmer-glow">
 <div class="absolute -top-1 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-6 py-2 rounded-b-2xl font-bold text-xs uppercase tracking-widest shadow-md" style="">RECOMENDADO</div>
 <div class="py-10 text-center flex flex-col items-center flex-grow px-8">
 <h3 class="font-heading font-extrabold text-2xl text-white uppercase tracking-wider mb-6" style="">PAGO ÚNICO</h3>
 <div class="mb-6 flex flex-col items-center">
 <div class="flex items-start">
-<span class="text-brand-accent text-2xl font-bold mt-2" style="">$</span>
-<span class="text-brand-accent text-8xl font-black tracking-tighter" style="">97</span>
+<span class="text-white text-2xl font-bold mt-2" style="">$</span>
+<span class="text-white text-8xl font-black tracking-tighter" style="">97</span>
 </div>
-<span class="text-brand-accent text-xl font-bold uppercase tracking-widest mt-1" style="">/ 3 MESES</span>
+<span class="text-white/80 text-xl font-bold uppercase tracking-widest mt-1" style="">/ 3 MESES</span>
 </div>
 <div class="mb-8 w-full border-t border-white/20 pt-8">
 <ul class="space-y-4 text-left px-2">
 <li class="flex items-center text-white" style="">
-<div class="w-6 h-6 bg-brand-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-<i class="fas fa-check text-[10px]"></i>
+<div class="w-6 h-6 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+<i class="fas fa-check text-[10px] text-white"></i>
 </div>
 <span class="text-sm font-semibold" style="">Acceso total al reto completo</span>
 </li>
 <li class="flex items-center text-white" style="">
-<div class="w-6 h-6 bg-brand-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-<i class="fas fa-check text-[10px]"></i>
+<div class="w-6 h-6 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+<i class="fas fa-check text-[10px] text-white"></i>
 </div>
 <span class="text-sm font-semibold" style="">Mejor costo-beneficio</span>
 </li>
 <li class="flex items-center text-white" style="">
-<div class="w-6 h-6 bg-brand-accent rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-<i class="fas fa-check text-[10px]"></i>
+<div class="w-6 h-6 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+<i class="fas fa-check text-[10px] text-white"></i>
 </div>
 <span class="text-sm font-semibold" style="">Garantía de resultados 90 días</span>
 </li>
 </ul>
 </div>
 <a class="animate-pulse-green bg-brand-accent text-white px-10 py-5 rounded-2xl font-heading font-black text-2xl shadow-xl hover:bg-green-700 transition-all w-full text-center uppercase tracking-tighter" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">
-              UNIRME AL RETO
-            </a>
-<div class="mt-8 text-white/50 text-[10px] font-bold uppercase tracking-widest" style="">TE QUEDAS CON LOS VIDEOS POR UN AÑO</div>
+                            UNIRME AL RETO
+                        </a>
+<div class="mt-8 text-white/60 text-[10px] font-bold uppercase tracking-widest" style="">TE QUEDAS CON LOS VIDEOS POR UN AÑO</div>
 </div>
 </div>
 </div>
@@ -376,64 +377,64 @@
 </section>
 <!-- END: Plan Cards Section -->
 <!-- BEGIN: Pricing Section -->
-<section class="py-20 bg-white" data-purpose="pricing-table" id="pricing">
-<div class="container mx-auto px-6">
+<section class="py-24 bg-white relative overflow-hidden" data-purpose="pricing-table" id="pricing">
+<div class="container mx-auto px-6 relative z-10">
 <div class="text-center mb-16">
 <h2 class="font-heading font-extrabold text-4xl text-brand-dark mb-4 uppercase tracking-tighter" style="">Inversión del Reto</h2>
-<p class="text-gray-500 max-w-2xl mx-auto" style="">Selecciona tu país para ver las opciones disponibles y asegura tu cupo hoy mismo.</p>
+<p class="text-gray-400 max-w-2xl mx-auto" style="">Selecciona tu país para ver las opciones disponibles y asegura tu cupo hoy mismo.</p>
 </div>
-<div class="max-w-5xl mx-auto overflow-x-auto rounded-3xl shadow-2xl border border-purple-100 mb-12 bg-white">
+<div class="max-w-5xl mx-auto overflow-x-auto rounded-3xl shadow-lg border border-purple-50 mb-12 bg-white/90 backdrop-blur-md">
 <table class="w-full text-center border-collapse">
 <thead>
 <tr class="bg-brand-primary text-white font-heading font-bold uppercase tracking-wider">
 <th class="py-6 px-4 border-r border-white/20 text-sm" style="">País</th>
 <th class="py-6 px-4 border-r border-white/20 text-sm" style="">Valor Mensual</th>
-<th class="py-6 px-4 bg-brand-accent text-sm" style="">Valor Único por 1 Año</th>
+<th class="py-6 px-4 bg-brand-secondary text-sm" style="">Valor Único por 1 Año</th>
 </tr>
 </thead>
 <tbody class="text-brand-dark font-medium">
-<tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+<tr class="border-b border-purple-50 hover:bg-brand-light/20 transition-colors">
 <td class="py-6 px-4 font-bold" style="">ESTADOS UNIDOS</td>
-<td class="py-6 px-4" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">47 US</a></td>
-<td class="py-6 px-4 bg-brand-light/40 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">97 US</a></td>
+<td class="py-6 px-4" style=""><a class="hover:text-brand-primary transition-colors" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">47 US</a></td>
+<td class="py-6 px-4 bg-brand-light/30 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">97 US</a></td>
 </tr>
-<tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+<tr class="border-b border-purple-50 hover:bg-brand-light/20 transition-colors">
 <td class="py-6 px-4 font-bold" style="">COLOMBIA</td>
-<td class="py-6 px-4" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">182.354 COP</a></td>
-<td class="py-6 px-4 bg-brand-light/40 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">376.349 COP</a></td>
+<td class="py-6 px-4" style=""><a class="hover:text-brand-primary transition-colors" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">182.354 COP</a></td>
+<td class="py-6 px-4 bg-brand-light/30 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">376.349 COP</a></td>
 </tr>
-<tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+<tr class="border-b border-purple-50 hover:bg-brand-light/20 transition-colors">
 <td class="py-6 px-4 font-bold" style="">MÉXICO</td>
-<td class="py-6 px-4" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">1.026,60 MXN</a></td>
-<td class="py-6 px-4 bg-brand-light/40 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">2.119.32 MXN</a></td>
+<td class="py-6 px-4" style=""><a class="hover:text-brand-primary transition-colors" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">1.026,60 MXN</a></td>
+<td class="py-6 px-4 bg-brand-light/30 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">2.119.32 MXN</a></td>
 </tr>
-<tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+<tr class="border-b border-purple-50 hover:bg-brand-light/20 transition-colors">
 <td class="py-6 px-4 font-bold" style="">ESPAÑA</td>
-<td class="py-6 px-4" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">53.24 EUR</a></td>
-<td class="py-6 px-4 bg-brand-light/40 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">107.69 EUR</a></td>
+<td class="py-6 px-4" style=""><a class="hover:text-brand-primary transition-colors" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">53.24 EUR</a></td>
+<td class="py-6 px-4 bg-brand-light/30 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">107.69 EUR</a></td>
 </tr>
-<tr class="border-b border-purple-100 hover:bg-purple-50 transition-colors">
+<tr class="border-b border-purple-50 hover:bg-brand-light/20 transition-colors">
 <td class="py-6 px-4 font-bold" style="">PERÚ</td>
-<td class="py-6 px-4" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">S/167</a></td>
-<td class="py-6 px-4 bg-brand-light/40 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">S/344</a></td>
+<td class="py-6 px-4" style=""><a class="hover:text-brand-primary transition-colors" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">S/167</a></td>
+<td class="py-6 px-4 bg-brand-light/30 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">S/344</a></td>
 </tr>
-<tr class="hover:bg-purple-50 transition-colors">
+<tr class="hover:bg-brand-light/20 transition-colors">
 <td class="py-6 px-4 font-bold" style="">CHILE</td>
-<td class="py-6 px-4" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">52.301 CLP</a></td>
-<td class="py-6 px-4 bg-brand-light/40 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">107.939 CLP</a></td>
+<td class="py-6 px-4" style=""><a class="hover:text-brand-primary transition-colors" href="https://pay.hotmart.com/B103003328H?off=98q26enc&amp;checkoutMode=10" style="">52.301 CLP</a></td>
+<td class="py-6 px-4 bg-brand-light/30 font-extrabold text-brand-primary text-xl" style=""><a class="hover:underline" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10" style="">107.939 CLP</a></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="text-center mb-16">
 <a class="animate-pulse-green inline-block bg-brand-accent text-white px-16 py-6 rounded-2xl font-heading font-black text-2xl shadow-xl hover:bg-green-700 transition-all hover:-translate-y-1 mb-10" href="https://pay.hotmart.com/B103003328H?off=d82tmvcw&amp;checkoutMode=10&amp;bid=1768423174761" style="">
-        PAGAR AHORA <i class="fas fa-chevron-right ml-2 text-lg"></i>
+                PAGAR AHORA <i class="fas fa-chevron-right ml-2 text-lg"></i>
 </a>
 </div>
 <!-- BEGIN: Payment Methods Section -->
-<div class="reveal max-w-4xl mx-auto px-8 rounded-3xl bg-gray-50 border border-gray-100 shadow-inner active py-16" data-purpose="payment-methods">
+<div class="reveal max-w-4xl mx-auto px-8 rounded-3xl bg-brand-light/30 border border-purple-50 shadow-inner active py-16" data-purpose="payment-methods">
 <h3 class="font-heading font-bold text-center text-brand-dark mb-8 uppercase tracking-widest text-3xl" style="">Métodos de Pago Aceptados</h3>
-<div class="flex flex-wrap justify-center items-center gap-12 md:gap-16 grayscale-[0.4] opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-16 grayscale-[0.2] opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
 <a href="https://wa.me/message/KFHRUR6KF4RMP1" target="_blank" class="" style=""><img alt="Paypal" class="h-12 md:h-14" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/Pagos/10c2781-4f3d-cc35-b50-31d4c0d48f_326a4bc3-fc36-4a0c-8b4d-39e5aa8a2acf.png" style=""></a>
 <a href="https://wa.me/message/U4XXMB3LY5LEF1" target="_blank" class="" style=""><img alt="Western Union" class="h-12 md:h-14" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/Pagos/c24bd86-31a-c38-21a0-315a2d6b6d7_aea80444-f750-404c-ae80-a9a00deb58d8.png" style=""></a>
 <a href="https://wa.me/message/CCEC35X6LGTRG1" target="_blank" class="" style=""><img alt="Nequi" class="h-14 md:h-16" src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/Pagos/c4ed654-a673-6d8b-626d-3f32aa45c2_1c5e81fc-0a52-4ff9-b38d-3c19ef5f0b93.webp" style=""></a>
@@ -445,81 +446,96 @@
 </section>
 <!-- END: Pricing Section -->
 <!-- BEGIN: Guarantee Section -->
-<section class="py-16 bg-brand-light/50" data-purpose="guarantee">
-<div class="container mx-auto px-6 max-w-4xl text-center">
+<section class="py-20 bg-brand-light/60 relative overflow-hidden" data-purpose="guarantee">
+<div class="container mx-auto px-6 max-w-4xl text-center relative z-10">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<i class="fas fa-shield-alt text-brand-primary text-3xl"></i>
+</div>
 <h2 class="font-heading font-extrabold text-3xl text-brand-dark mb-4 uppercase" style="">Garantía total de 7 días</h2>
-<p class="text-lg text-gray-600 leading-relaxed" style="">
-      En caso de que no te guste o se te presente algún imprevisto se te reembolsará el 100 % de tu dinero. <br>
-<strong class="text-brand-dark">¡Sin preguntas, sin riesgos!</strong>
+<p class="text-lg text-gray-500 leading-relaxed" style="">
+            En caso de que no te guste o se te presente algún imprevisto se te reembolsará el 100 % de tu dinero. <br>
+<strong class="text-brand-primary">¡Sin preguntas, sin riesgos!</strong>
 </p>
 </div>
 </section>
 <!-- END: Guarantee Section -->
 <!-- BEGIN: FAQ Section -->
-<section class="py-20 bg-white" data-purpose="faq">
-<div class="container mx-auto px-6 max-w-3xl">
+<section class="py-24 bg-white relative overflow-hidden" data-purpose="faq">
+<div class="container mx-auto px-6 max-w-3xl relative z-10">
 <div class="text-center mb-12">
 <h2 class="font-heading font-extrabold text-3xl lg:text-4xl text-brand-dark uppercase" style="">Preguntas frecuentes</h2>
+<div class="w-16 h-1 bg-brand-light mx-auto mt-4 rounded-full"></div>
 </div>
 <div class="space-y-4">
-<div class="border border-purple-100 rounded-2xl overflow-hidden shadow-sm">
-<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-purple-50/30 hover:bg-purple-50 transition-colors" onclick="toggleFaq(this)" style="">
+<div class="border border-purple-50 rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-brand-light/20 hover:bg-brand-light/40 transition-colors" onclick="toggleFaq(this)" style="">
 <span class="" style="">¿CUÁNDO INICIA EL RETO?</span>
-<i class="fas fa-chevron-down transition-transform"></i>
+<i class="fas fa-chevron-down transition-transform text-brand-primary"></i>
 </button>
 <div class="p-0 max-h-0 overflow-hidden transition-all duration-300 bg-white">
-<div class="p-6 text-gray-600" style="">Iniciamos el lunes 19 de enero.</div>
+<div class="p-6 text-gray-500" style="">Iniciamos el lunes 19 de enero.</div>
 </div>
 </div>
-<div class="border border-purple-100 rounded-2xl overflow-hidden shadow-sm">
-<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-purple-50/30 hover:bg-purple-50 transition-colors" onclick="toggleFaq(this)" style="">
+<div class="border border-purple-50 rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-brand-light/20 hover:bg-brand-light/40 transition-colors" onclick="toggleFaq(this)" style="">
 <span class="" style="">¿LAS CLASES QUEDARÁN GRABADAS?</span>
-<i class="fas fa-chevron-down transition-transform"></i>
+<i class="fas fa-chevron-down transition-transform text-brand-primary"></i>
 </button>
 <div class="p-0 max-h-0 overflow-hidden transition-all duration-300 bg-white">
-<div class="p-6 text-gray-600" style="">Si, todas las clases quedarán grabadas en nuestra plataforma exclusiva.</div>
+<div class="p-6 text-gray-500" style="">Si, todas las clases quedarán grabadas en nuestra plataforma exclusiva.</div>
 </div>
 </div>
-<div class="border border-purple-100 rounded-2xl overflow-hidden shadow-sm">
-<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-purple-50/30 hover:bg-purple-50 transition-colors" onclick="toggleFaq(this)" style="">
+<div class="border border-purple-50 rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-brand-light/20 hover:bg-brand-light/40 transition-colors" onclick="toggleFaq(this)" style="">
 <span class="" style="">¿CUÁNTOS KILOS PUEDO BAJAR?</span>
-<i class="fas fa-chevron-down transition-transform"></i>
+<i class="fas fa-chevron-down transition-transform text-brand-primary"></i>
 </button>
 <div class="p-0 max-h-0 overflow-hidden transition-all duration-300 bg-white">
-<div class="p-6 text-gray-600" style="">De 2 a 4 kilos el primer mes, todo depende de tu metabolismo y compromiso.</div>
+<div class="p-6 text-gray-500" style="">De 2 a 4 kilos el primer mes, todo depende de tu metabolismo and compromiso.</div>
 </div>
 </div>
-<div class="border border-purple-100 rounded-2xl overflow-hidden shadow-sm">
-<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-purple-50/30 hover:bg-purple-50 transition-colors" onclick="toggleFaq(this)" style="">
+<div class="border border-purple-50 rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-brand-light/20 hover:bg-brand-light/40 transition-colors" onclick="toggleFaq(this)" style="">
 <span class="" style="">¿EL MÉTODO ES PERSONALIZADO?</span>
-<i class="fas fa-chevron-down transition-transform"></i>
+<i class="fas fa-chevron-down transition-transform text-brand-primary"></i>
 </button>
 <div class="p-0 max-h-0 overflow-hidden transition-all duration-300 bg-white">
-<div class="p-6 text-gray-600" style="">Las clases son grupales con seguimiento semipersonalizado por WhatsApp.</div>
+<div class="p-6 text-gray-500" style="">Las clases son grupales con seguimiento semipersonalizado por WhatsApp.</div>
 </div>
 </div>
-<div class="border border-purple-100 rounded-2xl overflow-hidden shadow-sm">
-<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-purple-50/30 hover:bg-purple-50 transition-colors" onclick="toggleFaq(this)" style="">
+<div class="border border-purple-50 rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-brand-light/20 hover:bg-brand-light/40 transition-colors" onclick="toggleFaq(this)" style="">
 <span class="" style="">¿PUEDO CONTINUAR EN EL RETO DESPUES DE LOS 90 DÍAS?</span>
-<i class="fas fa-chevron-down transition-transform"></i>
+<i class="fas fa-chevron-down transition-transform text-brand-primary"></i>
 </button>
 <div class="p-0 max-h-0 overflow-hidden transition-all duration-300 bg-white">
-<div class="p-6 text-gray-600" style="">Si eres juiciosa y disciplinada y haces caso a lo que te digo, te tendré en cuenta para mi grupo avanzado.</div>
+<div class="p-6 text-gray-500" style="">Si eres juiciosa y disciplinada y haces caso a lo que te digo, te tendré en cuenta para mi grupo avanzado.</div>
 </div>
 </div>
-<div class="border border-purple-100 rounded-2xl overflow-hidden shadow-sm">
-<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-purple-50/30 hover:bg-purple-50 transition-colors" onclick="toggleFaq(this)" style="">
+<div class="border border-purple-50 rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full text-left p-6 font-bold text-brand-dark flex justify-between items-center bg-brand-light/20 hover:bg-brand-light/40 transition-colors" onclick="toggleFaq(this)" style="">
 <span class="" style="">¿NO QUIERO BAJAR DE PESO, QUIERO TONIFICAR, SE PUEDE?</span>
-<i class="fas fa-chevron-down transition-transform"></i>
+<i class="fas fa-chevron-down transition-transform text-brand-primary"></i>
 </button>
 <div class="p-0 max-h-0 overflow-hidden transition-all duration-300 bg-white">
-<div class="p-6 text-gray-600" style="">Si ya estás en tu peso ideal y solo quieres tonificar, este reto es perfecto porque aborda ambas cosas: perder peso primero y luego tonificar.</div>
+<div class="p-6 text-gray-500" style="">Si ya estás en tu peso ideal y solo quieres tonificar, este reto es perfecto porque aborda ambas cosas: perder peso primero y luego tonificar.</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- END: FAQ Section -->
+<footer class="py-12 bg-brand-light border-t border-purple-50 text-center relative overflow-hidden">
+<div class="container mx-auto px-6 relative z-10">
+<div class="flex items-center justify-center space-x-2 mb-6">
+<div class="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold italic">
+<i class="fas fa-venus text-xs"></i>
+</div>
+<span class="font-heading font-extrabold text-lg tracking-tight text-brand-dark uppercase" style="">Mamá Fit</span>
+</div>
+<p class="text-gray-400 text-xs uppercase tracking-widest" style="">© 2025 Reto 90 Días - Todos los derechos reservados</p>
+</div>
+</footer>
 <script>
     function toggleFaq(btn) {
       const content = btn.nextElementSibling;
@@ -532,5 +548,19 @@
         icon.style.transform = 'rotate(180deg)';
       }
     }
-  </script>
-```</body></html>
+
+    // Optional: simple observer for scroll reveal effects
+    const observerOptions = {
+      threshold: 0.1
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body></html>
