@@ -35,12 +35,10 @@
     </script>
 <style data-purpose="custom-animations">
         /* ESTILOS DE IMAGEN DE FONDO HERO */
-        .hero-background {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-            background-image: url(https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/Fondo%20hero/Generated%20Image%20March%2012,%202026%20-%201_18PM.png)
-        }
+/* REEMPLAZA con esto */
+.hero-background {
+    position: relative;
+}
 
         @media (max-width: 768px) {
             .hero-background {
@@ -160,7 +158,14 @@
 </nav>
 <!-- END: Navigation -->
 <!-- INICIO SECCIÓN HERO -->
-<section class="flex flex-col lg:flex-row min-h-[600px] lg:min-h-[850px] relative overflow-hidden hero-background" data-purpose="hero">
+<section class="flex flex-col lg:flex-row relative overflow-hidden hero-background" data-purpose="hero">
+    <img 
+        src="https://pzazphhmyomyechreizy.supabase.co/storage/v1/object/public/TEST%20LANDING%20CREATOR%20REY%20ACADEMY/Fondo%20hero/Generated%20Image%20March%2012,%202026%20-%201_18PM.png"
+        alt=""
+        aria-hidden="true"
+        class="hidden lg:block absolute inset-0 w-full h-full object-top object-center pointer-events-none"
+        style="z-index: 0; object-fit: cover; object-position: top center;"
+    >
 <div class="container mx-auto px-6 relative z-10 py-20 lg:py-32 flex-grow">
 <div class="max-w-4xl">
 <div class="inline-flex items-center space-x-2 bg-brand-primary/90 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-[10px] lg:text-xs font-black tracking-[0.2em] uppercase mb-8 shadow-lg border border-white/20">
